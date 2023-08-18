@@ -1,0 +1,52 @@
+.comments{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    .heading{
+        text-align: center;
+        padding: 20px 0 20px 0;
+        font-size: 30px;
+    }
+    .left{
+        display: flex;
+        margin-bottom: 20px;
+        background-color: rgb(243, 236, 225);
+        border-radius: 8%;
+        .img{
+            max-width: 50px;
+            .one{
+                width: 40px;
+                border-radius: 50%;
+            }
+            .three{
+                width: 27px;
+                border-radius: 48%;
+                
+            }
+        }
+        p{
+          font-size: 20px;
+          padding-left: 10px; 
+        }
+    }
+    .right{
+        display: flex;
+        margin-bottom: 20px;
+        background-color: rgb(234, 234, 242);
+        border-radius: 8%;
+        .two{
+            width: 50px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .four{
+            width: 35px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 20px;
+            padding-right: 5px;  
+          }
+    }
+}

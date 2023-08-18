@@ -36,10 +36,15 @@ addEventListener('click', displayVideo);
 function displayVideo() {
     block.classList.add("hide");
     border.appendChild(divOne);
+    divOne.style.display = "block";
 };
 
 
 closebtn.addEventListener("click", () =>{
-    block.classList.remove("hide");
-    border = "";
+     block.classList.remove("hide");
+     divOne.style.display = "none";
+     
+    // border = "";
+    // let block = document.querySelector(".block");
+     //border.innerhtml = "block";
 });

@@ -1,10 +1,8 @@
-@charset "UTF-8";
 * {
-  padding: auto;
+  padding: 0;
   margin: 0;
 }
-
-.container {
+.container{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,9 +14,11 @@ header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
-header .header #logo {
+#logo {
   width: 150px;
+
 }
 header .header button {
   border-radius: 4px;
@@ -40,7 +40,7 @@ header .header button span {
   transition: 0.2s;
 }
 header .header button span:after {
-  content: ">>";
+  content: "";
   position: absolute;
   opacity: 0;
   top: 0;
@@ -60,11 +60,11 @@ header .header button:hover span:after {
   right: 0;
 }
 header .illustration {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
 }
 header .illustration #imgillustrate {
   width: 300px;
@@ -77,6 +77,7 @@ header .illustration .subtitle {
 }
 
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,10 +86,13 @@ main {
 main .border {
   text-align: center;
   justify-content: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 300px;
   height: -moz-fit-content;
   height: fit-content;
+}
+main .border .hidden {
+  visibility: hidden;
 }
 main .border .btn {
   border-radius: 4px;
@@ -135,98 +139,11 @@ main .two {
 
 .hide {
   display: none;
-}
-
-footer {
-  background-color: #b0d5ed;
-}
-footer .links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .links #logo {
-  width: 120px;
-}
-footer .links a[href] {
-  text-decoration: none;
-  font-size: 20px;
-  padding: 8px;
-  color: inherit;
-}
-footer .links a[href]:hover {
-  color: blue;
-}
-footer .icons {
-  display: flex;
-  justify-content: center;
-}
-footer .icons img {
-  width: 40px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-top: 10px;
-}
-footer p {
-  text-align: center;
-  padding-top: 15px;
-  font-size: 20px;
-}
+}/*# sourceMappingURL=allservice.css.map */
 
 @media only screen and (min-width: 900px) {
   main {
     flex-direction: row;
-    gap:  20px;
-  }
+    gap: 20px;
 }
-.comments {
-  display: flex;
-  flex-direction: column;
-  max-width: 90%;
 }
-.comments .heading {
-  text-align: center;
-  padding: 20px 0 20px 0;
-  font-size: 30px;
-}
-.comments .left {
-  display: flex;
-  margin-bottom: 20px;
-  background-color: rgb(243, 236, 225);
-  border-radius: 8%;
-}
-.comments .left .img {
-  max-width: 50px;
-}
-.comments .left .img .one {
-  width: 40px;
-  border-radius: 50%;
-}
-.comments .left .img .three {
-  width: 27px;
-  border-radius: 48%;
-}
-.comments .left p {
-  font-size: 20px;
-  padding-left: 10px;
-}
-.comments .right {
-  display: flex;
-  margin-bottom: 20px;
-  background-color: rgb(234, 234, 242);
-  border-radius: 8%;
-}
-.comments .right .two {
-  width: 50px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-.comments .right .four {
-  width: 35px;
-  border-radius: 50%;
-  margin-bottom: 30px;
-}
-.comments .right p {
-  font-size: 20px;
-  padding-right: 5px;
-}/*# sourceMappingURL=allservice.css.map */
